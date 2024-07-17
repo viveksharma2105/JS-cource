@@ -33,7 +33,7 @@ console.log(add1(3 ,4));
 
 
 
-const add2 = (num1 , num2) => {return num1+num2}     //syntex2   . If we use paranthesis then we must have to use return 
+const add2 = (num1 , num2) => {return num1+num2}     //syntex2   . If we use curly-braces then we must have to use return 
 console.log(add2(21,21));
 
 
