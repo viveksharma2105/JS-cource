@@ -1,4 +1,4 @@
-// For-of loop  (applicable on array and map not for objects)
+// For-of loop  (applicable on array, string and map not for objects)
 const arr = [1, 2, 3, 4, 5]
 for (const num of arr) {
     //console.log(num);    
