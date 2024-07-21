@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM </title>
+</head>
+<body style="background-color: rgb(67, 67, 66); color: aliceblue;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+    
+</body>
+<script>
+const parent = document.querySelector('.parent')
+parent
+// console.log(parent);
+// console.log(parent.children);//inner class elements
+// console.log(parent.children[1].innerHTML);//1st element access
+
+
+
+//print all the elements (mon,tue,wed,thur)
+for (let i = 0; i < parent.children.length; i++) {
+    //console.log(parent.children[i].innerHTML);
+    
+}
+
+
+//styling
+parent.style.color = 'pink'
+parent.children[1].style.color = 'yellow'
+
+
+//prop
+// console.log(parent.firstElementChild);
+// console.log(parent.lastElementChild);
+
+
+//find parent form child
+const dayone = document.querySelector('.day') //here day class is child or parent class
+console.log(dayone.parentElement);
+console.log(dayone.nextElementSibling);
+
+
+//most important give all the nodes of the parent class
+console.log("Node:", parent.childNodes);
+
+
+</script>
+</html>
