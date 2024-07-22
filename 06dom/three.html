@@ -28,3 +28,38 @@
 
 </script>
 </html>
+
+
+
+
+      
+<!--
+here we wrap the element in a function and change its bg-color every time
+
+<script>
+    function add(count){
+        const color = ["white", "blue", "black" ];
+        for (let i = 0; i < count; i++) {
+            
+            
+        
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = 'main'
+    div.id = Math.floor(Math.random()*100 +1)
+    div.setAttribute("title", "Cheetah_coding")
+    div.style.backgroundColor = color[i]
+    div.style.padding = "15px"
+    div.style.borderRadius = "15"
+   // div.innerText ="ghatak"  
+   const addtext =document.createTextNode("ghatak")
+   div.appendChild(addtext)//add text to div
+
+
+   document.body.appendChild(div) // add div file to page
+
+    }}
+
+    add(3)
+
+-->
