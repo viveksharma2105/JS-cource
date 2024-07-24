@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    //give time and afterthat it will execute
+    setTimeout(function(){
+        console.log("vivek");
+    },3000)
+
+    // //another way
+    // const sayvivek = function(){
+    //     console.log("vivek");
+    // }
+    // setTimeout(sayvivek,300)
+
+
+
+    //changer heading after 3 sec
+    const changeMe =setTimeout(function(){
+        document.querySelector('h1').innerHTML="Hii This is Vivek Sharma"
+
+    },3000)
+
+
+    // press stop button before 3 sec to stop the change in heading
+document.querySelector('#stop').addEventListener("click",function(){
+    clearTimeout(changeMe)
+    console.log("stop");
+})
+
+
+
+</script>
+</html>
