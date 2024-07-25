@@ -13,11 +13,29 @@
 <script>
     
     let intveral;
-    
+
+function getcolors(){
+    const r = Math.floor(Math.random() *256 );
+    const g = Math.floor(Math.random() *256 );
+    const b = Math.floor(Math.random() *256 );
+    return `rgb ${r},${g},${b}`;
+}
+
+// // another way for random
+// function getcol(){
+//     let hex = '0123456789ABCDEF'
+//     const element = "#";
+//     for (let i = 0; i < 6; i++) {
+        
+// element += hex[Math.floor(Math.random() *16)];
+//          }
+
+//          return element;
+// }
 
 function startIntv(){
     intveral = setInterval(function(){
-       console.log(Date()); 
+      document.bgColor = getcolors()
     },1000)
 
 }
