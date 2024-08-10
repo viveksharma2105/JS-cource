@@ -1,3 +1,4 @@
+//phototype
 // let myname = 'vivek'
 // let age = 17
 
