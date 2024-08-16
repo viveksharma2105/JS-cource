@@ -61,9 +61,30 @@ function sum(n){
     return add
 }
 
-console.log(sum(10));
+//console.log(sum(10));
 
 
 
 
-//que 5 ----------------------------
+//que 5 generic function simple ex ----------------------------------------------------
+function sum(a, b){
+    return a+b;
+}
+function sub(a, b){
+    return a-b;
+}
+function multi(a, b){
+    return a*b;
+}
+function divide(a, b){
+    return a/b;
+}
+
+//here op is a function .
+function opopration(a, b, op){
+    return op(a,b);
+}
+
+
+
+console.log(opopration(21,5,multi));
