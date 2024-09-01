@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <h1 id="a">1</h1>
+
+</head>
+<body style="background-color: pink;">
+
+
+</body>
+<script>
+    const el = document.querySelector("h1");
+    let a = 0;
+    setInterval(function(){
+        
+       
+        a = a + 1;
+      
+        el.innerHTML = a;
+        if (a==21) {
+            a = 0;
+            
+        }
+        
+    },1000);
+    
+       </script>
+</html>
